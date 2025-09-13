@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+openai
+chromadb
+streamlit
+python-dotenv
+pandas
+tqdm
+sentence_transformers
+groq
