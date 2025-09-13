@@ -1,5 +1,5 @@
-🩺 RAG-based Medical FAQ Chatbot
-📖 Overview
+RAG-based Medical FAQ Chatbot
+Overview
 
 This project implements a Retrieval-Augmented Generation (RAG) chatbot for answering medical FAQs.
 It uses:
@@ -35,17 +35,7 @@ Streamlit
 
 Uvicorn
  – ASGI server
-
-📂 Project Structure
-.
-├── app.py               # FastAPI backend with RAG pipeline
-├── preprocess.py        # Preprocessing script: builds ChromaDB index
-├── ui.py                # Streamlit chat frontend
-├── Medical_FAQ.csv      # Dataset (Question, Answer format)
-├── requirements.txt     # Python dependencies
-└── chroma_persist/      # ChromaDB persistent index (auto-created)
-
-📦 Installation
+Installation
 
 Clone repo & create virtual environment
 
@@ -65,7 +55,7 @@ Create a .env file in the project root:
 
 GROQ_API_KEY=your_groq_api_key
 
-🛠️ Usage
+Usage
 1. Preprocess dataset into ChromaDB
 
 Ensure your dataset Medical_FAQ.csv has columns:
@@ -92,7 +82,7 @@ uvicorn app:app --reload
 
 
 Backend runs at:
-👉 http://localhost:8000
+http://localhost:8000
 
 Example request:
 
@@ -112,11 +102,11 @@ Response:
 streamlit run ui.py
 
 
-Open browser: 👉 http://localhost:8501
+Open browser: http://localhost:8501
 
 You can now chat with the bot interactively.
 
-🧩 Design Choices
+Design Choices
 
 Embeddings: Local SentenceTransformer (all-MiniLM-L6-v2) → avoids API cost & latency.
 
